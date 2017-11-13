@@ -1,0 +1,180 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/*Global styles */
+.container{
+  margin:auto;
+  overflow:hidden;
+  width:80%;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button-signup{
+  height:38px;
+  background:#AD180E;
+  border:0;
+  color:#ffffff;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/*Styling for the main header*/
+header{
+  background:#00171F;
+  color:#ffffff;
+  min-height:70px;
+  padding-top:30px;
+}
+
+header a{
+  color:#ffffff;
+  text-transform: uppercase;
+  text-decoration:none;
+  font-size:16px;
+}
+
+header li{
+  display:inline;
+  float:left;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .active-page, header .current a{
+  color:#AD180E;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* styling for the main-banner*/
+#main-banner{
+  min-height:400px;
+  background:url('../img/fitness.png') no-repeat -50px -100px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#main-banner h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#main-banner p{
+  font-size:20px;
+}
+
+/*Styling for the sign up section*/
+#sign-up{
+  padding:15px;
+  color:#ffffff;
+  background:#00171F;
+}
+
+#sign-up h1{
+  float:left;
+}
+
+#sign-up form {
+  float:right;
+  margin-top:15px;
+}
+
+#sign-up input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:240px;
+}
+
+/*Styling for the 4 columns at the bottom of the home page*/
+#columns{
+  margin-top:20px;
+}
+
+#columns .box{
+  float:left;
+  text-align: center;
+  width:23%;
+  height:auto;
+  padding:10px;
+}
+
+#columns .box img{
+  width:90px;
+  height: 100px;
+}
+
+/*styling for the footer*/
+footer{
+  text-align: center;
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#00171F;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
